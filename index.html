@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Enlaces de google fonts, font awesome favicon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="icon" href="imagenes/faviconFd.jpg" type="image/jpg" />
+
+</head>
+<body>
+ <div class="contenedor">
+    <header class="header">
+        <img src="imagenes/logofed.png" alt="Este es un logo">
+        <h1>PAGINA WEB</h1>
+            <h2 class="subtitulo">SERVICIOS DE MANTENIMIENTOS</h2>
+    </header> 
+        
+    <nav>
+           <div class="search">
+            <input type="search" id="search" placeholder="Buscador..."/> 
+            <button class="icono"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+           </div>
+
+        <input type="checkbox" id="menu">
+        <label for="menu"><i class="fa-sharp fa-solid fa-bars"></i></label> 
+        
+            <div class="menu">
+                <ul>
+                    <li><a href="#menu"><span><i class="fa-sharp fa-solid fa-house"></i></span> Inicio</a></li>
+                    <li><a href="#article"><span><i class="fa-sharp fa-solid fa-earth-americas"></i></span> Servicios</a></li>
+                    <li><a href="#main"><span><i class="fa-sharp fa-solid fa-briefcase"></i></span> Productos</a></li>
+                    <li><a href="#footer"><span><i class="fa-sharp fa-solid fa-user"></i></span> Clientes</a></li>
+                    <li><a href="#aside"><span><i class="fa-sharp fa-solid fa-phone"></i></span> Contacto</a></li>
+                  </ul>
+                </div>  
+
+            </nav>
+            <article class="col-s-3 col-3 article">
+                <img src="imagenes/Joe.png" alt="foto de una persona" id="img1"><br>
+                 <h3>Joe Mitchell</h3>
+                <p>Front-end desarrollador</p><br><br>
+                
+                  <div class="datos">
+                    <ul>
+                        <li><span><i class="fa-sharp fa-solid fa-map-location-dot"></i></span> 1245 Rolling Green Rd</li>
+                        <li><span><i class="fa-sharp fa-solid fa-envelope"></i></span> joe.mitchell@example.com</li>
+                        <li><span><i class="fa-sharp fa-solid fa-phone"></i></span>(576) 550-4672</li><br>
+                        HABILIDADES INFORMATICAS
+                        <li>Programacion con Javascript,<br>HTML,CSS</li>
+                        <li>Maquetacion CSS</li>
+                        <li>Conocimiento en SQL</li><br>
+                        IDIOMAS
+                        <li>Ingles Nativo</li>
+                        <li>Español Avanzado</li>
+                        <li>Frances Avanzado</li>
+
+                    </ul>
+                    
+                  </div>
+            </article>
+
+       <main class="col-s-9 col-6 main"> 
+        <section><br>
+            <img src="imagenes/fredDoc.jpg" alt="foto de otra persona" id="img2" />
+            <p> EDUCACION <br>
+             2005 - 2010<br>
+             Curabitur
+            felis dui, ultrices ut, sollicitudin vel, rutrum at, tellus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+            ullamcorper velit eu ipsum.<br>
+            2011 - 2015<br>
+            Ut pellentesque, est in volutpat cursus, risus
+            mi viverra augue, at pulvinar turpis leo sed orci. Donec ipsum.<br>
+                RESUMEN PROFESIONAL<br>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+            ullamcorper velit eu ipsum. Ut pellentesque, est in volutpat cursus, risus
+            mi viverra augue, at pulvinar turpis leo sed orci. Donec ipsum. Curabitur
+            felis dui, ultrices ut, sollicitudin vel, rutrum at, tellus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+            ullamcorper velit eu ipsum.<br>
+            EXPERIENCIA<br>
+            2017 - 2020
+            desarrollador web en Empresa: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+            ullamcorper velit eu ipsum. Ut pellentesque, est in volutpat cursus, risus
+            mi viverra augue, at pulvinar turpis leo sed orci. Donec ipsum.
+
+
+        </p>
+        
+        </section>
+
+    </main>
+
+    <aside class="col-s-12 col-3 aside">
+        <ul>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+            ullamcorper velit eu ipsum. Ut pellentesque, est in volutpat cursus, risus
+            mi viverra augue, at pulvinar turpis leo sed orci.
+           
+        </ul><br>
+           
+
+            <form id="Formulario" action="" method="get" onsubmit ="return validacion(this)">
+              <p>
+                  <input type="text" name="nombre" id="nombre" placeholder="Inglese su nombre">
+                <label>Nombre</label>
+                <br>
+                <input type="text" name="apellido" id="apellido" placeholder="Inglese su apellido">
+                <label>Apellido</label>
+                <br>
+                <input type="text" name="email" id="email" placeholder="Inglese su email">
+                <label>Email</label>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+              </p>
+            </form>
+            <p id="demo">Estamos aprendiendo javascript</p>
+
+    <p>here</p>
+    
+    </aside>
+    
+    <footer class="footer">
+        <span><a href="#exemplo@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></span>
+        <span><a href="#facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></span>
+        <span><a href="#"><i class="fa-brands fa-square-instagram"></i></a></span>
+        <p> Contactanos ahora</p>
+    </footer> 
+ </div>
+ <script src="javascript/formulario.js"></script>
+</body>
+</html>
